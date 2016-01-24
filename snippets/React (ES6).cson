@@ -51,7 +51,7 @@
 
     """
   'React ES6 Stateless Component':
-    'prefix': 'slc'
+    'prefix': 'rslc'
     'body': """
       import React from 'react';
 
@@ -79,6 +79,95 @@
       };
     """
 
+  #React Lifecycle Methods
+  'React ES6 componentWillMount() method':
+    'prefix': 'rcwm',
+    'body': """
+      componentWillMount() {
+        ${1}
+      }
+    """
+
+  'React ES6 componentDidMount() method':
+    'prefix': 'rcdm',
+    'body': """
+      componentDidMount() {
+        ${1}
+      }
+    """
+
+  'React ES6 componentWillReceiveProps() method':
+    'prefix': 'rcwrp',
+    'body': """
+      componentWillReceiveProps(nextProps) {
+        ${1}
+      }
+    """
+
+  'React ES6 shouldComponentUpdate() method':
+    'prefix': 'rscu',
+    'body': """
+      shouldComponentUpdate(nextProps, nextState) {
+        ${1}
+      }
+    """
+
+  'React ES6 componentWillUpdate() method':
+    'prefix': 'rcwu',
+    'body': """
+      componentWillUpdate(nextProps, nextState) {
+        ${1}
+      }
+    """
+
+  'React ES6 componentDidUpdate() method':
+    'prefix': 'rcdu',
+    'body': """
+      componentDidUpdate(prevProps, prevState) {
+        ${1}
+      }
+    """
+
+  'React ES6 componentWillUnmount() method':
+    'prefix': 'rcwun',
+    'body': """
+      componentWillUnmount() {
+        ${1}
+      }
+    """
+
+  #React Component APIs
+  'React setState':
+    'prefix': 'rss',
+    'body': """
+      this.setState({
+        ${1}: ${2},
+      });
+    """
+
+  'React setState - inline':
+    'prefix': 'rssi',
+    'body': """
+      this.setState({ ${1}: ${2} })
+    """
+
+  'React props':
+    'prefix': 'rprs',
+    'body': """
+      this.props.${1}
+    """
+
+  'React refs':
+    'prefix': 'rrfs',
+    'body': """
+      this.refs.${1}
+    """
+
+  'React findDOMNode()':
+    'prefix': 'rfdn',
+    'body': """
+      ReactDOM.findDOMNode({1})
+    """
 
   # PropType string
   'React PropType string':
